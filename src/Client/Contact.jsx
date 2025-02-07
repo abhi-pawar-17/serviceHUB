@@ -14,7 +14,7 @@ const Contact = () => {
     };
 
     try {
-      const response = await fetch('https://107.21.85.231:8292/api/inquiry/inquiry', {
+      const response = await fetch('/api/inquiry/inquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(requestData),
