@@ -17,7 +17,7 @@ const Services = () => {
     const fetchServices = async () => {
       try {
         const response = await axios.get(
-          "http://107.21.85.231:8292/api/services/services"
+          "https://107.21.85.231:8292/api/services/services"
         );
         const data = response.data.map((service, index) => ({
           ...service,
